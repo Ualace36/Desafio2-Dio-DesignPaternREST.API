@@ -1,9 +1,8 @@
 package com.ualace36.designpatternspring.service;
 
 import com.ualace36.designpatternspring.model.ClienteEntity;
-import org.springframework.stereotype.Service;
 
-@Service
+
 public interface ClienteService {
 
     Iterable<ClienteEntity> getAll();
