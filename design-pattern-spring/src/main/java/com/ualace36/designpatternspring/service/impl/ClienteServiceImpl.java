@@ -7,10 +7,10 @@ import com.ualace36.designpatternspring.repository.EnderecoRepository;
 import com.ualace36.designpatternspring.service.ClienteService;
 import com.ualace36.designpatternspring.service.ViaCepService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
-
 @Service
 public class ClienteServiceImpl implements ClienteService {
 
@@ -19,7 +19,7 @@ public class ClienteServiceImpl implements ClienteService {
     private ClienteRepository clienteRepository;
     @Autowired
     private EnderecoRepository endenderecoRepository;
-   @Autowired
+    @Autowired
     private ViaCepService viaCepService;
     // Strategy: Implementa os métodos definidos na interface
     //  Facade: Abstrai integrações com subsistemas, promovendo uma interface simples
